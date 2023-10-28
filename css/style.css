@@ -205,7 +205,7 @@ html{
     align-items: center;
     flex-wrap: wrap;
     /* main property for responsiveness */
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 
@@ -216,7 +216,7 @@ html{
 
 .home .image img{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
 
 
@@ -227,6 +227,7 @@ html{
 
 .home .content h1{
     font-size: 4.5rem;
+    padding-bottom: 1rem;
     padding-block-end: 1rem 0;
     color: var(--Very-Dark-Blue);
 }
@@ -234,9 +235,9 @@ html{
 .home .content p{
     font-size: 1.7rem;
     padding: 1rem 0;
-    max-width: 40rem;
+    max-width: 42rem;
     color: var(--Grayish-Blue);
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
 }
 
 .home .content .home-btn{
@@ -265,38 +266,43 @@ html{
 
 /* features section starts  */
 
-.features .row{
+.tentang .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
-.features .row .image{
+.tentang .row .image{
     flex: 1 1 45rem;
 }
 
 
-.features .row .image img{
+.tentang .row .image img{
     width: 100%;
 }
 
+#Hotel{
+    padding-top: 5rem;
+}
 
-
-.features .row .content{
+.tentang .row .content{
     flex: 1 1 45rem;
 }
 
 
-.features .row .content h1{
+.tentang .row .content h1{
     font-size: 4rem;
     padding: 1rem 0;
     color: var(--Very-Dark-Blue);
 }
 
+#penjelasan{
+    padding-bottom: 3rem;
+}
 
-.features .row .content p{
+.tentang .row .content p{
     font-size: 1.7rem;
     padding: 1rem 0;
     color: var(--Grayish-Blue);
@@ -304,6 +310,13 @@ html{
 }
 /* features section ends */
 
+/* Location */
+
+#peta{
+    padding: 3rem;
+}
+
+/* Location */
 
 /* downloads section starts  */
 
