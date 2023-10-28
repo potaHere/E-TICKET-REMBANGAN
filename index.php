@@ -132,16 +132,25 @@
         </div>
     </section>
 
-    <section class="location" id="lokasi">
+    <section class="lokasi" id="lokasi">
+        <div class="heading">
+            <h1>Lokasi Wisata Rembangan</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.898839275545!2d113.6904683!3d-8.0785502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6eb6b22b4390b%3A0xcdcfa9792af9847c!2sHotel%20Rembangan!5e0!3m2!1sid!2sid!4v1698464765683!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- <section class="location" id="lokasi">
     <div class="container text-center">
   <div class="row d-flex justify-content-md-center">
-    <h1>Lokasi Wisata Rembangan</h1>
+    <div class="heading">    
+        <h1>Lokasi Wisata Rembangan</h1>
+    </div>
     <div class="col-sm-auto" id="peta">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.898839275545!2d113.6904683!3d-8.0785502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6eb6b22b4390b%3A0xcdcfa9792af9847c!2sHotel%20Rembangan!5e0!3m2!1sid!2sid!4v1698464765683!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 
-    </section>
+    </section> -->
 
 
     <!-- features sectin ends -->

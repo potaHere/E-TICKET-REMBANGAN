@@ -110,11 +110,13 @@ html{
     margin-left: 2rem;
     font-size: 1.7rem;
     text-transform: uppercase;
+    text-decoration:none;
 }
 
 
 .header .navbar a:hover{
     color: var(--Soft-Red);
+    text-decoration:none;
 }
 
 
@@ -185,6 +187,7 @@ html{
         text-align: center;
         display: block;
         font-size: 2rem;
+        text-decoration:none;
     }
 }
 
@@ -311,7 +314,13 @@ html{
 /* features section ends */
 
 /* Location */
-
+.lokasi .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 2rem 0;
+}
 #peta{
     padding: 3rem;
 }
@@ -377,15 +386,18 @@ html{
     font-size: 1.5rem;
     color:var(--light-color);
     padding: 1rem 0;
+    text-decoration:none;
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
     color:var(--green);
+    text-decoration:none;
 }
 
 .footer .box-container .box a:hover i{
     padding-right:1rem;
+    text-decoration:none;
 }
 
 
@@ -400,9 +412,10 @@ html{
 }
 
 
-.footer .credit span{
+.footer .credit span, .credit a{
     color: var(--Soft-Red);
     cursor: pointer;
+    text-decoration:none;
 }
 
 
