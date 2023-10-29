@@ -16,7 +16,8 @@
     <!-- navbar sections starts  -->
     <header class="header">
         <div class="logo">
-            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+            <!-- <img src="images/logo-bookmark.svg" alt="logo-bookmark"> -->
+            <h1>Rembangan</h1>
         </div>
 
         <nav class="navbar">
@@ -64,7 +65,7 @@
             <p id="penjelasan">Kawasan wisata ini dikelola oleh pemerintah daerah Jember. Untuk memasuki kawasan Puncak Rembangan memerlukan harga tiket sebesar Rp7.500 per orang di hari biasa. 
                 Sedangkan di hari libur, pengunjung harus membayar tiket sebesar Rp10.000. Beberapa fasilitas yang disediakan oleh Wisata Rembangan yaitu:</p>
                 <p> - Hotel</p>
-                <p> - Cafe</p>
+                <p> - Resto</p>
                 <p> - Kolam renang</p>
                 <p> - Camping Ground </p>
         </div>
@@ -108,9 +109,9 @@
             </div>
 
             <div class="content">
-                <h1>Cafe</h1>
-                <p>Café yang satu ini menyediakan pemandangan indah di puncak ketinggian pegunungan yang sejuk dan menyegarkan. Café yang berada di puncak rembangan ini bernuansa kayu dengan aksen jawa yang kental dan dilengkapi dengan bangku kayu diluar untuk menikmati pemandangan pegunungan. 
-                    Café ini berada disekitar Rembangan, Darungan, Kemuning Lor, Kecamatan Arjasa, Kabupaten Jember. Tempat ini juga fasilitas kolam renang dan berudara dingin, sehingga cocok sebagai tempat nongkrong bersama keluarga</p>
+                <h1>Resto</h1>
+                <p>Restoran yang satu ini menyediakan pemandangan indah di puncak ketinggian pegunungan yang sejuk dan menyegarkan. Restoran yang berada di puncak rembangan ini bernuansa kayu dengan aksen jawa yang kental dan dilengkapi dengan bangku kayu diluar untuk menikmati pemandangan pegunungan. 
+                    Restoran ini berada disekitar Rembangan, Darungan, Kemuning Lor, Kecamatan Arjasa, Kabupaten Jember. Tempat ini juga fasilitas kolam renang dan berudara dingin, sehingga cocok sebagai tempat nongkrong bersama keluarga</p>
                 <!-- <a href="#" class="all-btn">more info</a> -->
             </div>
 
@@ -135,7 +136,9 @@
     <section class="lokasi" id="lokasi">
         <div class="heading">
             <h1>Lokasi Wisata Rembangan</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.898839275545!2d113.6904683!3d-8.0785502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6eb6b22b4390b%3A0xcdcfa9792af9847c!2sHotel%20Rembangan!5e0!3m2!1sid!2sid!4v1698464765683!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-1">
+        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.898839275545!2d113.6904683!3d-8.0785502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6eb6b22b4390b%3A0xcdcfa9792af9847c!2sHotel%20Rembangan!5e0!3m2!1sid!2sid!4v1698464765683!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
