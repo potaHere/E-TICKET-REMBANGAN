@@ -8,3 +8,18 @@
             }
         });
     });
+
+    // go to up button
+    const goToTopButton = document.getElementById('go-to-top-button');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+        goToTopButton.style.display = 'block';
+        } else {
+        goToTopButton.style.display = 'none';
+        }
+    });
+
+    goToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });

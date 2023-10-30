@@ -1,7 +1,7 @@
 body {
   font-family: Raleway, sans-serif;
   background: #f6f8fd;
-  padding-top: 72px; /* Sesuaikan dengan tinggi navbar Anda */
+  /* padding-top: 72px; Sesuaikan dengan tinggi navbar Anda */
 }
 
 title h1 {
@@ -22,7 +22,7 @@ title h1 {
 }
 
 .navbar {
-  position: fixed;
+  position: static !important;
   top: 0;
   width: 100%;
   z-index: 1; /* Menempatkan navbar di atas elemen-elemen lain */
@@ -39,6 +39,26 @@ title h1 {
   color: #295B62ff !important;
 }
 
+/* banner */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  right: 50%;
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin: 0;
+}
+
+/* fasilitas */
 .feature-icon-1 {
   display: inline-flex;
   align-items: center;
@@ -49,26 +69,6 @@ title h1 {
   color: #fff;
   border-radius: 100%;
 }
-
-/* .btn-social-media {
-  color: #31316a;
-  background-color: #cdcfdf;
-  border-color: #cdcfdf;
-  width: 2rem;
-  height: 2rem;
-  padding: 1.2rem;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-}
-
-.btn-social-media:hover {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-} */
 
 /* Footer */
 .footer .copyright a {
@@ -87,6 +87,39 @@ title h1 {
 
 .footer .link a:hover {
   color: #0d6efd;
+}
+
+/* go to up button */
+#go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: #208938ff;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+#go-to-top-button:hover {
+  background-color: #2ecc71;
+}
+
+#go-to-top-button i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 /* CSS HEX */
