@@ -70,6 +70,17 @@ title h1 {
   border-radius: 100%;
 }
 
+/* kontak */
+.contact-info {
+  margin-top: 2rem;
+}
+
+div.flex-grow-1 a{
+  flex-grow: 1 !important;
+  color: #212529; 
+  text-decoration: none;
+}
+
 /* Footer */
 .footer .copyright a {
   color: #ee5050;
