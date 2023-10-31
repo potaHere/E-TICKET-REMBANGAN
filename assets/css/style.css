@@ -8,6 +8,10 @@ title h1 {
   color: #ffffff;
 }
 
+.custom-padding {
+  /* padding-top: 72px; */
+}
+
 .bg-nav {
   background-color: #B2E4D0ff;
 }
@@ -22,10 +26,15 @@ title h1 {
 }
 
 .navbar {
-  position: static !important;
+  position: sticky !important;
   top: 0;
   width: 100%;
   z-index: 1; /* Menempatkan navbar di atas elemen-elemen lain */
+  transition: top 0.3s; /* Add transition for smooth effect */
+}
+
+.navbar.hide {
+  top: -100%; /* Hide the navbar by moving it out of the viewport */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -40,7 +49,7 @@ title h1 {
 }
 
 /* banner */
-.carousel-caption {
+/* .carousel-caption {
   position: absolute;
   bottom: 0;
   left: 30px;
@@ -56,7 +65,7 @@ title h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: left;
   margin: 0;
-}
+} */
 
 /* fasilitas */
 .feature-icon-1 {
@@ -68,6 +77,19 @@ title h1 {
   font-size: 3rem;
   color: #fff;
   border-radius: 100%;
+}
+
+/* About */
+.smaller-image {
+  width: 60%; /* Adjust this value to make the image smaller or larger */
+  height: auto; /* Keep the aspect ratio of the image */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .smaller-image {
+    width: 100%;
+  }
 }
 
 /* kontak */
