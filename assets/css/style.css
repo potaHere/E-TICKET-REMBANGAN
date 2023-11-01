@@ -8,6 +8,10 @@ title h1 {
   color: #ffffff;
 }
 
+i.btn {
+  background-color: #09154Cff;
+}
+
 .custom-padding {
   padding-top: 72px;
 }
@@ -23,7 +27,7 @@ title h1 {
 
 /* navbar */
 .bg-nav {
-  background-color: #B2E4D0ff;
+  background-color: #208938ff;
 }
 
 .navbar {
@@ -46,25 +50,8 @@ title h1 {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #295B62ff !important;
+  color: #B2E4D0ff !important;
 }
-
-/* .login-btn {
-  background-color: #B2E4D0ff;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: all 0.4s;
-}
-
-.login-btn:hover {
-  background-color: #295B62ff;
-  color: #ffffff;
-} */
 
 /* banner */
 .slider_section {
@@ -92,33 +79,6 @@ title h1 {
   z-index: 4;
   color: #ffffff;
   padding: 75px 0;
-}
-
-.slider_section .detail-box h1 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.slider_section .detail-box p {
-  width: 75%;
-  margin-top: 5px;
-}
-
-/* .slider_section .detail-box .slider-link {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: transparent;
-  color: #fd9c6b;
-  border-radius: 5px;
-  border: 1px solid #fd9c6b;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  margin-top: 35px;
-} */
-
-.slider_section .detail-box .slider-link:hover {
-  background-color: #fd9c6b;
-  color: #ffffff;
 }
 
 .slider_section .slider_bg_box {
@@ -154,6 +114,7 @@ title h1 {
   font-size: 3rem;
   color: #fff;
   border-radius: 100%;
+  background-color: #208938ff;
 }
 
 /* About */
@@ -180,23 +141,28 @@ div.flex-grow-1 a{
   text-decoration: none;
 }
 
+i.fs-4 {
+  color: #208938ff;
+}
+
+
 /* Footer */
 .footer .copyright a {
-  color: #ee5050;
+  color: #208938ff;
   text-decoration: none;
 }
 
 .footer .copyright a:hover {
-  color: #eb2d2d;
+  color: #2ecc71;
 }
 
 .footer .link a {
-  color: #212529;
+  color: #000000;
   text-decoration: none;
 }
 
 .footer .link a:hover {
-  color: #0d6efd;
+  color: #208938ff;
 }
 
 /* go to up button */
@@ -211,7 +177,7 @@ div.flex-grow-1 a{
   background-color: #208938ff;
   padding: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #go-to-top-button:hover {
