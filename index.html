@@ -27,7 +27,7 @@
 
 <body id="home" class="d-flex flex-column h-100">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav">
+    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav transparent-navbar">
         <div class="container">
                 <img src="assets/img/logo/logo-rembangan.png" alt="Wisata Rembangan" width="42" height="42" class="d-inline-block mt--2 me-2">
                 <span class="text-body fs-4 fw-bolder">Wisata Rembangan</span>
@@ -53,52 +53,38 @@
                     <li class="nav-item">
                         <a class="nav-link mx-3" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 login-btn" >Login <i class="bi bi-person-circle"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/foto/rembangan.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
+        <section class="slider_section position-relative" id="home">
+            <div class="slider_bg_box">
+            <img src="assets/img/foto/rembangan.jpg" alt="">
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/foto/kolam 1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/foto/camping2.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-        <!-- <img src="assets/img/rembangan 1.jpg" class="banner" alt="" loading="lazy"> -->
-        <!-- Heroes -->
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5">
-                <div class="col-lg-5">
-                    <img src="assets/img/foto/rembangan 1.jpg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+            <div class="slider_bg"></div>
+            <div class="container">
+            <div class="text-background col-md-9 col-lg-8">
+                <div class="detail-box">
+                <h1 class="fw-bold lh-2 mb-4">
+                    Wisata
+                    <br> Rembangan
+                </h1>
+                <p class="lead mb-5">
+                    Discover your future holiday
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6281232728242&text=Assalamualaikum.." class="btn btn-primary rounded-pill px-4 py-2"><i class="bi bi-whatsapp me-2"></i> Pesan Reservasi Disini</a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6281232728242&text=Assalamualaikum.." class="btn btn-primary rounded-pill px-4 py-2"><i class=""></i> Pesan Tiket Masuk Disini</a>
                 </div>
-                <div class="col-lg-7">
-                    <h1 class="fw-bold lh-2 mb-4">Wisata Rembangan</h1>
-                    <p class="lead mb-5">Discover your future holiday</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=6281232728242&text=Assalamualaikum.." class="btn btn-primary rounded-pill px-4 py-2"><i class="bi bi-whatsapp me-2"></i> Pesan Tiket Masuk Disini</a>
-                    </div>
                 </div>
             </div>
-        </div>
+            </div>
+        </section>
 
         <!-- Services -->
         <div id="services" class="container text-center py-5">
