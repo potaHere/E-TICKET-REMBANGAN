@@ -178,8 +178,12 @@ i.fs-4 {
 
 
 /* Footer */
+.footer {
+  background-color: #208938ff;
+}
+
 .footer .copyright a {
-  color: #208938ff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
