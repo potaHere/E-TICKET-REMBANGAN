@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/img/foto/resto3.jpg');
+    opacity: 0.4; /* Ganti nilai sesuai kebutuhan (0-1) */
+    z-index: -1;
+}
+
+body {
+    margin: 0; /* Menghilangkan margin default dari body */
+    overflow: hidden; /* Mencegah overflow halaman */
+    display: flex;
+    font-family: "Poppins";
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .card{
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .card form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+
+.container .card form button{
+    background: rgb(74, 143, 83);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container .card form button:hover{
+    background: rgb(95, 149, 102);
+}
+
+.container .card form .link{
+    padding: 5px 0;
+}
+
+.container .card form .message a{
+    color: rgb(74, 143, 83);
+}
+.container .login-form form p{
+    font-size: 14px;
+}
+
+.row{
+    align-items:center; 
+    justify-content:center;
+}
