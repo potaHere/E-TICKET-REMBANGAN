@@ -10,34 +10,11 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wisata Rembangan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Poppins:300);
-        body{
-            display:flex; align-items:center; justify-content:center; background-color: rgb(58, 112, 90); font-family: "Poppins";
-        }
-
-        .form-group{
-            margin-bottom: 1rem;
-            font-family: "Poppins", sans-serif;
-            font-size: larger;
-        }
-
-        .card-header {
-            align-items:center; 
-            justify-content:center;
-            text-align: center;
-        }
-
-        .middle{
-            align-items:center; justify-content:center; display:flex;
-        }
-
-        .kendaraan-button {
-            min-width: 125px; /* Adjust this value as needed */
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/pmsn.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
+
     <?php
         // include('includes/header.php'); 
         // include('side-bar.php');
@@ -62,15 +39,15 @@ session_start();
                                         Pembelian tiket dapat dilakukan secara online maupun offline. Pembelian tiket secara online dapat dilakukan melalui website ini. Pembelian tiket secara offline dapat dilakukan di loket-loket yang tersedia di lokasi wisata.
                                     </p>
                                 </div> -->
-                    <div class="card shadow">
-                        <div class="card-header"><h1>TIKET</h1></div>
-                        <div class="card-body">
+                    <div class="card ">
+                        <h1 class="text-center"><i class="bi bi-ticket-detailed">TIKET</i></h1>
+                        
                             <form action="pemesanan-code.php" method="POST">
                                 <div class="form-group mb-3">
-                                    <div class="container text-center">
-                                        <div class="row">
+                                   
+                                        <div class="row text-center">
                                             <div class="col mb-3">
-                                                <label class="mid" for="tgl_masuk"><h4>Tanggal Masuk</h4></label>
+                                                <label for="tgl_masuk"><h4>Tanggal Masuk</h4></label>
                                                 <input type="date" name="tgl_masuk" class="form-control" placeholder="">
                                             </div>
                                             <!-- <div class="col mb-3">
@@ -78,24 +55,24 @@ session_start();
                                                 <input type="date" name="tgl_keluar" class="form-control" placeholder="">
                                             </div> -->
                                         </div>
-                                    </div>
+                                    
                                 </div>
-                                <div class="form-group middle mb3">
+                                <div class="form-group mb3 text-center">
                                     <label for="nama"><h4>Jumlah Tiket</h4></label>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <div class="container text-center">
-                                        <div class="row">
+                                    
+                                        <div class="row text-center">
                                             <div class="col">
-                                                <label class="mid" for="dewasa">Dewasa</label>
+                                                <label for="dewasa">Dewasa</label>
                                                 <input type="number" name="dewasa" class="form-control" placeholder="1">
                                             </div>
                                             <div class="col">
-                                                <label class="mid" for="anak">Anak-anak</label>
+                                                <label for="anak">Anak-anak</label>
                                                 <input type="number" name="anak" class="form-control" placeholder="0">
                                             </div>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="form-group mb-3"></div>
                                     <div class="input-group mb-3">
@@ -124,11 +101,13 @@ session_start();
                                     <button type="submit" name="pemesanan_btn" class="btn btn-success">Pilih Metode Pembayaran</button>
                                 </div>
                             </form>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 </body>
