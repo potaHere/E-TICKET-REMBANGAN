@@ -19,10 +19,10 @@ session_start();
         // include('includes/header.php'); 
         // include('side-bar.php');
     ?>
-    <div class="py-5" style="width: 800px;">
+    <div class="py-5" style="width: 100%;">
         <div class="container">
             <div class="row" style="align-items:center; justify-content:center;">
-                <div class="col-md-8">
+                <div class="col-md login-form text-center">
                     <?php
                         if (isset($_SESSION['status'])) 
                         {
@@ -43,11 +43,22 @@ session_start();
                         <h1 class="text-center"><i class="bi bi-ticket-detailed">TIKET</i></h1>
                         
                             <form action="pemesanan-code.php" method="POST">
+
                                 <div class="form-group mb-3">
-                                   
-                                        <div class="row text-center">
+
+                                <div class="">
+                                        <div class="row">
                                             <div class="col mb-3">
-                                                <label for="tgl_masuk"><h4>Tanggal Masuk</h4></label>
+                                                <label for="nama"><h5>Nama</h5></label>
+                                                <input type="text" name="nama" class="form-control" placeholder="">
+                                                <input type="hidden" name="email" class="form-control" placeholder="" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="tgl_masuk"><h5>Tanggal Masuk</h5></label>
                                                 <input type="date" name="tgl_masuk" class="form-control" placeholder="">
                                             </div>
                                             <!-- <div class="col mb-3">
@@ -57,8 +68,8 @@ session_start();
                                         </div>
                                     
                                 </div>
-                                <div class="form-group mb3 text-center">
-                                    <label for="nama"><h4>Jumlah Tiket</h4></label>
+                                <div class="mb3 text-center">
+                                    <label for="nama"><h5>Jumlah Tiket</h5></label>
                                 </div>
                                 <div class="form-group mb-3">
                                     
@@ -95,10 +106,55 @@ session_start();
                                     </script>
                                 <div class="form-group row">
                                     <label>Total Harga: </label>
-                                    <span id="totalPrice">0</span>
+                                    <input type="text" name="total_harga" id="totalPrice" class="form-control" value="Rp 0" readonly style="border: none; pointer-events: none;">
+                                    <input type="hidden" name="total_harga_int" id="totalPrice_int" class="form-control" value="" readonly style="border: none; pointer-events: none;">
                                 </div>
                                 <div class="form-group row">
-                                    <button type="submit" name="pemesanan_btn" class="btn btn-success">Pilih Metode Pembayaran</button>
+                                    <button type="button" name="pilih_pembayaran" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pilih Metode Pembayaran</button>
+                                
+                                     <!-- Modal -->
+                                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Metode Pembayaran</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row"><h5>Transfer Virtual Account</h5>
+                                                <div class="col">
+                                                    <!-- Add unique IDs to your buttons -->
+                                                    <button type="button" id="bank-bri" class="payment-button"><img src="img/bank-bri.png" alt="Bank BRI" width="100px"></button>
+                                                    <button type="button" id="bank-bni" class="payment-button"><img src="img/bank-bni.png" alt="Bank BNI" width="100px"></button>
+                                                    <button type="button" id="bank-bca" class="payment-button"><img src="img/bank-bca.png" alt="Bank BCA" width="100px"></button>
+
+                                                    <!-- Add a hidden input field to store the selected item -->
+                                                    <input type="hidden" id="selected-payment-method" name="selected_payment_method">
+                                                </div>
+                                            </div>
+                                            <div class="row"><h5>E Money</h5>
+                                                <div class="col">
+                                                    <button type="button"><img src="img/bank-bri.png" alt="Bank BRI" width="100px"></button>
+                                                    <button type="button"><img src="img/bank-bni.png" alt="Bank BNI" width="100px"></button>
+                                                    <button type="button"><img src="img/bank-bca.png" alt="Bank BCA" width="100px"></button>
+                                                </div>
+                                            </div>
+                                            <div class="row"><h5>MiniMarket/Outlet</h5>
+                                                <div class="col">
+                                                    <button type="button"><img src="img/bank-bri.png" alt="Bank BRI" width="100px"></button>
+                                                    <button type="button"><img src="img/bank-bni.png" alt="Bank BNI" width="100px"></button>
+                                                    <button type="button"><img src="img/bank-bca.png" alt="Bank BCA" width="100px"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" name="pemesanan_btn" class="btn btn-success">Bayar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
                                 </div>
                             </form>
                         
@@ -108,6 +164,8 @@ session_start();
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/pemesanan.js"></script>
     
 </body>

@@ -43,12 +43,10 @@ input{
 }
 
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .container .card{
     background: #fff;
@@ -58,7 +56,7 @@ input{
 }
 
 .container .card form .form-control{
-    height: 40px;
+    height: 35px;
     font-size: 15px;
 }
 
@@ -66,7 +64,7 @@ input{
 .container .card form button{
     background: rgb(74, 143, 83);
     color: #fff;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -82,8 +80,8 @@ input{
 .container .card form .message a{
     color: rgb(74, 143, 83);
 }
-.container .login-form form p{
-    font-size: 14px;
+.container .login-form .card label{
+    font-size: 15px;
 }
 
 .row{
@@ -91,4 +89,6 @@ input{
     justify-content:center;
 }
 
-/* navbar */
+.modal-body{
+    
+}
