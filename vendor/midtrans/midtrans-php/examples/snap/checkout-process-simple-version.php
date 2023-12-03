@@ -21,25 +21,7 @@ $transaction_details = array(
     'order_id' => $order_id,
     'gross_amount' => $total, // no decimal allowed for creditcard
 );
-// // Optional
-// $item_details = array (
-//     array(
-//         'id' => 'a1',
-//         'price' => 94000,
-//         'quantity' => 1,
-//         'name' => "Apple"
-//     ),
-//   );
-// // Optional
-// $customer_details = array(
-//     'first_name'    => "Andri",
-//     'last_name'     => "Litani",
-//     'email'         => "andri@litani.com",
-//     'phone'         => "081122334455",
-//     'billing_address'  => $billing_address,
-//     'shipping_address' => $shipping_address
-// );
-// Fill transaction details
+
 $transaction = array(
     'transaction_details' => $transaction_details,
     'customer_details' => $customer,

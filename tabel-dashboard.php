@@ -12,46 +12,12 @@ $result = $con->query($sql);
                     <li>
                         <a href="#">Tabel Tiket</a>
                     </li>
-                    <!-- <li><i class='bx bx-chevron-right'></i></li>
-                    <li>
-                        <a class="active" href="#">Home</a>
-                    </li> -->
                 </ul>
             </div>
-            <a href="#" class="btn-download">
-                <i class='bx bxs-cloud-download' ></i>
-                <span class="text">Download PDF</span>
-            </a>
-    </div>
-    <!-- <ul class="box-info">
-            <li>
-                <i class='bx bxs-calendar-check' ></i>
-                <span class="text">
-                    <h3>1020</h3>
-                    <p>New Order</p>
-                </span>
-            </li>
-            <li>
-                <i class='bx bxs-group' ></i>
-                <span class="text">
-                    <h3>2834</h3>
-                    <p>Visitors</p>
-                </span>
-            </li>
-            <li>
-                <i class='bx bxs-dollar-circle' ></i>
-                <span class="text">
-                    <h3>$2543</h3>
-                    <p>Total Sales</p>
-                </span>
-            </li>
-    </ul> -->
     <div class="table-data">
             <div class="order">
                 <div class="head">
                     <h3>Recent Orders</h3>
-                    <!-- <i class='bx bx-search' ></i> -->
-                    <!-- <i class='bx bx-filter' ></i> -->
                 </div>
                 <table>
                     <thead>
@@ -113,3 +79,24 @@ $result = $con->query($sql);
             </div> -->
     </div>
 </main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var searchInput = document.getElementById("search-input1");
+  var tableRows = document.querySelectorAll("tbody tr"); // Ganti dengan selektor yang sesuai
+
+  searchInput.addEventListener("input", function () {
+    var searchValue = searchInput.value.toLowerCase();
+
+    tableRows.forEach(function (row) {
+      var rowText = row.textContent.toLowerCase();
+
+      if (rowText.includes(searchValue)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
+</script>

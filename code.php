@@ -17,8 +17,8 @@ function sendemail_verify($name, $email, $verify_token)
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;                      
 
-    $mail->Username   = 'mm';                     
-    $mail->Password   = 'mm';
+    $mail->Username   = 'potanut12@gmail.com';                     
+    $mail->Password   = 'qiog wfrr itnt htmk';
 
     $mail->SMTPSecure = 'tls';             
     $mail->Port       = 587;
@@ -71,7 +71,7 @@ if (isset ($_POST['register_btn']))
     $name = $_POST['nama'];
     $telp = $_POST['telp'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);  // Enkripsi password
+    $password = $_POST['password'];  // Enkripsi password
     $verify_token = md5(rand());
 
     //email Exist or Not

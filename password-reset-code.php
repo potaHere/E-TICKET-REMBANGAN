@@ -19,12 +19,12 @@ function send_password_reset($get_name, $get_email, $token)
     $mail->SMTPAuth   = true;                      
 
     $mail->Username   = 'potanut12@gmail.com';                     
-    $mail->Password   = 'mm';
+    $mail->Password   = 'qiog wfrr itnt htmk';
 
     $mail->SMTPSecure = 'tls';             
     $mail->Port       = 587;
 
-    $mail->setFrom('potanut12@gmail.com','E-TICKETING REMBANGAN');
+    $mail->setFrom('pesonarembangan@gmail.com','E-TICKETING REMBANGAN');
     $mail->addAddress($get_email);
 
     $mail->isHTML(true);

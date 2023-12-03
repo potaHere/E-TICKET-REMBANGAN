@@ -21,11 +21,14 @@ if (isset($_POST['login_now_btn']))
                 // Check user role and redirect accordingly
                 if ($row['level'] == 'admin') 
                 {
+                    $_SESSION['level'] = $row['level']; // asumsikan $row adalah baris hasil dari query database
+                    $_SESSION['email'] = $email;
                     header("Location: dashboard.php"); // Redirect to dashboard
                     exit(0);
                 } 
                 else if ($row['level'] == 'user') 
                 {
+                    $_SESSION['level'] = $row['level'];
                     $_SESSION['email'] = $email;
                     header("Location: pemesanan.php"); // Redirect to user page
                     exit(0);

@@ -38,7 +38,7 @@ session_start();
                                 <input type="hidden" name="password_token" value="<?php if(isset($_GET['token'])){echo $_GET['token'];} ?>">
                                 <div class="form-group mb-3">
                                     <label for="email">Alamat Email</label>
-                                    <input type="email" name="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" class="form-control" placeholder="Enter Email Address">
+                                    <input type="email" name="email" readonly value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" class="form-control" placeholder="Enter Email Address">
                                 </div>
                                 <div class="form-group mb-3">
                                     <label for="email">New Password</label>

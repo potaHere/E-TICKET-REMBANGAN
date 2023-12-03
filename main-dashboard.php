@@ -9,7 +9,7 @@ $jumlah_tiket = $result->num_rows;
 
 
 //total pengunjung
-$query = "SELECT jumlah_dewasa, jumlah_anak FROM tiket WHERE status_tiket = 3";
+$query = "SELECT jumlah_dewasa, jumlah_anak FROM tiket WHERE status_tiket = 'sudah di scan'";
 $result = $con->query($query);
 
 $total_dewasa = 0;
@@ -22,12 +22,12 @@ while($row = $result->fetch_assoc()) {
 
 
 //total penjualan
-$query = "SELECT status_pembayaran FROM tiket WHERE status_pembayaran = 'Telah Dibayar'";
+$query = "SELECT total_harga FROM tiket WHERE status_pembayaran = 'Telah Dibayar'";
 $result = $con->query($query);
 
 $total_penjualan = 0;
 while($row = $result->fetch_assoc()) {
-    $total_penjualan += $row['jumlah_pembayaran'];
+    $total_penjualan += $row['total_harga'];
 }
 $total_penjualan_idr = "Rp" . number_format($total_penjualan, 2, ',', '.');
 

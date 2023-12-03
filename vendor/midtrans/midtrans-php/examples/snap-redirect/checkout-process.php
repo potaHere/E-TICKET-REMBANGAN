@@ -41,7 +41,7 @@ $params = array(
 try {
     // Get Snap Payment Page URL
     $paymentUrl = Snap::createTransaction($params)->redirect_url;
-  
+
     // Redirect to Snap Payment Page
     header('Location: ' . $paymentUrl);
 }
