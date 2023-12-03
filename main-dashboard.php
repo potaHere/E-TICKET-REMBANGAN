@@ -52,7 +52,7 @@ $total_penjualan_idr = "Rp" . number_format($total_penjualan, 2, ',', '.');
                 <span class="text">Download PDF</span>
             </a> -->
     </div>
-    <ul class="box-info">
+    <!-- <ul class="box-info">
             <li>
                 <i class='bx bxs-calendar-check' ></i>
                 <span class="text">
@@ -74,25 +74,6 @@ $total_penjualan_idr = "Rp" . number_format($total_penjualan, 2, ',', '.');
                     <p>Total Penjualan</p>
                 </span>
             </li>
-    </ul>
-    <div class="table-data">
-        <div class="data">
-            <div class="content-data">
-                <div class="head">
-                    <h3>Sales Report</h3>
-                    <!-- <div class="menu">
-                            <i class="bx bx-dots-horizontal-rounded"></i>
-                            <ul class="menu-link">
-                                <li><a href="#">Edit</a></li>
-                                <li><a href="#">Save</a></li>
-                                <li><a href="#">Remove</a></li>
-                                </ul>
-                    </div> -->
-                </div>
-                <div class="chart">
-                    <div id="chart"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </ul> -->
+    <iframe title="Report Section" width="1124" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNTNjYTE2YjMtMDMyNC00ODFmLWFjMjktMGZjNGY3MjQzOGNkIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
 </main>
