@@ -1,6 +1,6 @@
 <?php
 include ('koneksiDB.php');
-$sql = "SELECT `id_tiket`, `nama`, `email`, `tanggal_masuk`, `jumlah_dewasa`, `jumlah_anak`, `jenis_kendaraan`, `jumlah_kendaraan`, `total_harga`, `status_pembayaran`, `waktu_transaksi`, `status_tiket` FROM `tiket`";
+$sql = "SELECT `id_tiket`, `nama`, `email`, `tanggal_masuk`, `jumlah_dewasa`, `jumlah_anak`, `jenis_kendaraan`, `jumlah_kendaraan`, `total_harga`, `status_pembayaran`, `waktu_transaksi`, `status_tiket` FROM `tiket` ORDER BY `tiket`.`waktu_transaksi` DESC";
 $result = $con->query($sql);
 ?>
 
